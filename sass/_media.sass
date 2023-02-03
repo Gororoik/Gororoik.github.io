@@ -1,0 +1,196 @@
+@media ( max-width: 1200px )
+
+    .menu
+        &_item
+            padding-right: 19px
+        &_link
+            font-size: 13px
+    .promo
+        &_header
+            font-size: 50px
+    .reasons
+        &_block
+            align-items: flex-start
+        &_descr
+            width: 300px
+    .mobile
+        &_item
+            width: 290px
+    .footer_links
+        width: 290px
+        &_main
+            a
+                font-size: 12px
+        &_sub
+            a
+                font-size: 10px
+        &_lang
+            a
+                font-size: 12px
+    .footer_mobile
+        a
+            img
+                width: 77px
+
+@media ( max-width: 991px )
+
+    .menu
+        &_item
+            padding-right: 8.5px
+        &_link
+            font-size: 10px
+    .subheader
+        &_official
+            font-size: 11px
+        &_logo
+            img
+                width: 100%
+        &_phone
+            font-size: 18px
+        &_btn
+            margin-top: 21px
+            width: 100%
+            height: 40px
+    .promo
+        &_header
+            font-size: 40px
+        &_subheader
+            font-size: 28px
+    .reasons
+        &_block
+            flex-direction: column
+            align-items: center
+        &_descr
+            margin-top: 20px
+
+@media (max-width: 767px)
+    .menu
+        position: fixed
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh
+        padding: 20px 15px
+        background-color: rgba(0,0,0, .8)
+        transition: 0.7s all
+        &_active 
+            left: 0
+        &_item 
+            padding-right: 0
+            border: none
+            margin: 10px 0
+        &_link 
+            font-size: 20px
+    .hamburger
+        display: block
+    .subheader
+        &_call
+            display: none
+        &_phone
+            display: block
+            margin-top: 10px
+            font-weight: 400
+            font-size: 16px
+            text-align: center
+            text-transform: uppercase
+            color: #FFFFFF
+        &_btn
+            display: block
+            width: 200px
+            height: 40px
+            margin: 0 auto
+            margin-top: 12px
+            &:hover     
+                background-image: linear-gradient(to top, $main-color 0%, #4ce2ff 100%)
+    .promo
+        &_header
+            font-size: 40px
+        &_btn
+            &:hover
+                background-image: linear-gradient(to top, $main-color 0%, #4ce2ff 100%)
+    .xs-hidden
+        display: none
+    .xs-visible
+        display: block
+
+@media (max-width: 575px)
+    nav
+        height: 32px
+    header
+        height: 30px
+    .subheader
+        height: 62px
+        top: 32px
+        &_official
+            display: none
+        &_logo
+            margin-top: 17px
+            width: 130px
+        &_phone
+            font-weight: 400
+            font-size: 12px
+            text-transform: uppercase
+            margin-top: 11px
+        &_btn
+            width: 110px
+            height: 24px
+            margin-top: 8px
+            font-size: 10px
+            padding: 0
+            &:hover
+                background-image: linear-gradient(to top, $main-color 0%, #4ce2ff 100%)
+    .promo
+        min-height: 400px
+        padding: 102px 0 34px 0
+        &_header
+            width: 294px
+            font-style: normal
+            font-weight: 900
+            font-size: 30px
+            line-height: 35px
+            text-align: center
+            text-transform: uppercase
+            color: #FFFFFF
+            margin: 0 auto
+            padding: 0 25px
+        &_subheader
+            width: 294px
+            font-weight: 700
+            font-size: 20px
+            margin: 0 auto
+            margin-top: 33px
+            padding: 0 11px
+            line-height: 30px
+        &_descr
+            display: none
+        &_btn
+            width: 210px
+            height: 50px
+            font-style: normal
+            font-weight: 400
+            font-size: 16px
+            margin-top: 72px
+            &:hover
+                background-image: linear-gradient(to top, $main-color 0%, #4ce2ff 100%)
+    .choice
+        &_img
+            display: none
+    .menu
+        width: 85%
+        &_item
+            width: 100%
+            text-align: center
+            padding: 5px 0
+        &_link
+            display: block
+    .reasons
+        &_round
+            margin-right: 0
+        &_descr
+            .reasons_subtitle
+                text-align: center
+            .reasons_text
+                text-align: center
