@@ -1,0 +1,281 @@
+
+    // font-family: 'Roboto', sans-serif
+    // font-family: 'Montserrat', sans-serif
+
+header
+    height: 800px
+    background: url('../img/bg/bg_main.png') no-repeat center center/cover
+    .nav
+        position: fixed
+        width: 100%
+        min-height: 65px
+        background-color: #ffffff2c
+        display: flex
+        justify-content: space-between
+        .left_corner
+            display: flex
+            align-items: center
+            margin-left: 50px
+            &_menu
+                display: flex
+                align-items: center
+                list-style-type: none
+                padding-left: 0
+                &_item
+                    // font-style: normal
+                    // font-weight: 400
+                    // line-height: 12px
+                    font-family: 'Montserrat', sans-serif
+                    font-size: 10px
+                    letter-spacing: 1.67px
+                    margin-left: 31px
+                    a
+                        color: rgba(0, 0, 0, 0.3)
+                        text-decoration: none
+        .center
+            display: flex
+            align-items: center
+        .right_corner
+            display: flex
+            align-items: center
+            margin-right: 50px
+            padding-bottom: 8px
+            &_menu  
+                display: flex
+                align-items: center
+                list-style-type: none
+                padding-right: 0
+                &_item
+                    // line-height: 12px
+                    text-decoration: none
+                    font-family: 'Montserrat', sans-serif
+                    font-size: 10px
+                    margin-right: 31px
+                    letter-spacing: 1.67px
+                    a
+                        color: rgba(0, 0, 0, 0.3)
+                        text-decoration: none
+                    &_btn
+                        height: 23px
+                        background: #000000
+                        border: 1px solid #000000
+                        border-radius: 0px
+                        font-family: 'Montserrat'
+                        font-style: normal
+                        font-size: 10px
+                        line-height: 12px
+                        text-align: center
+                        letter-spacing: 1.67px
+                        color: #FFFFFF
+                        padding: 5px 18px 6px 18px
+                        transition: 0.5s all
+                        +btn_hover
+        .left_corner, .right_corner
+            nav
+                height: 15px
+    .main
+        padding: 215px 0 274px 0
+        .title
+            text-align: center
+            font-family: 'Roboto', sans-serif
+            font-style: normal
+            font-size: 57px
+            line-height: 67px
+            letter-spacing: 0.81px
+            color: #FFFFFF
+        .subtitle
+            text-align: center
+            font-family: 'Montserrat', sans-serif
+            font-style: normal
+            width: 496px
+            font-size: 16px
+            line-height: 25px
+            letter-spacing: 0.44px
+            color: #FFFFFF
+            margin: 0 auto
+            margin-top: 33px
+            margin-bottom: 60px
+.supplement
+    min-height: 532px
+    padding: 16px 0
+    display: flex
+    justify-content: center
+    .block2
+        background: url('../img/girls/girl_second.png') no-repeat
+    &_block:last-child
+        margin-right: 0
+    &_block
+        background: url('../img/girls/girl_first.png') no-repeat
+        width: 710px
+        height: 500px
+        margin-right: 20px
+        &_title
+            margin: 0 auto
+            margin-top: 310px
+            font-family: 'Roboto'
+            font-style: normal
+            font-size: 34px
+            text-align: center
+            letter-spacing: 0.5px
+            color: #FFFFFF
+        &_descr
+            width: 213px
+            // height: 25px
+            font-family: 'Montserrat'
+            font-style: normal
+            font-size: 16px
+            line-height: 25px
+            text-align: center
+            color: #FFFFFF
+            margin: 0 auto
+            margin-top: 13px
+        .descr2
+            width: 220px
+        &_menu
+            margin-top: 25px
+            display: flex
+            justify-content: center
+            &_link
+                font-family: 'Montserrat'
+                font-style: normal
+                font-size: 14px
+                text-align: center
+                text-transform: uppercase
+                text-decoration: none
+                line-height: 20px
+                letter-spacing: 2px
+                color: #FFFFFF
+                margin-right: 125px
+            &_link:last-child
+                margin-right: 0
+.quest
+    height: 729px
+    background: #0B0B0B
+    padding: 66.6px 0 88.6px 0
+    &_title
+        font-family: 'Roboto'
+        font-style: normal
+        font-size: 38px
+        line-height: 43px
+        text-align: center
+        letter-spacing: 0.2px
+        text-transform: uppercase
+        color: #FFFFFF
+    &_descr
+        margin: 0 auto
+        margin-top: 39px
+        width: 532px
+        font-family: 'Montserrat'
+        font-style: normal
+        font-size: 16px
+        line-height: 25px
+        text-align: center
+        color: #FFFFFF
+    &_img
+        display: flex
+        margin: 0 auto
+        margin-top: 32px
+        width: 444px
+        height: 366px
+.innovation
+    height: 729px
+    margin-top: 16px
+    padding: 288.8px 0 288px 0
+    background: url('../img/bg/bg_innovation.webp') center center/cover no-repeat
+    &_title
+        margin: 0 auto
+        width: 556px
+        font-family: 'Roboto'
+        font-style: normal
+        font-weight: 400
+        font-size: 38px
+        line-height: 43px
+        text-align: center
+        letter-spacing: 0.2px
+        text-transform: uppercase
+        color: #FFFFFF
+        margin-bottom: 28px
+
+.buttons
+    display: flex
+    justify-content: center
+.first
+    height: 36px
+    border-radius: 0px
+    cursor: pointer
+    border: 1px solid #FFFFFF
+    color: #FFFFFF
+    background-color: transparent
+    width: 215px
+    font-size: 1.5em
+    font-family: 'Montserrat'
+    font-style: normal
+    font-size: 14px
+    text-align: center
+    letter-spacing: 2px
+    margin-right: 20px
+    // box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6)
+    transition: 0.5s all
+    +btns_hover
+.second
+    height: 36px
+    border-radius: 0px
+    cursor: pointer
+    border: 1px solid #FFFFFF
+    color: #FFFFFF
+    background-color: transparent
+    width: 215px
+    font-size: 1.5em
+    font-family: 'Montserrat'
+    font-style: normal
+    font-size: 14px
+    text-align: center
+    letter-spacing: 2px
+    transition: 0.5s all
+    +btns_hover
+.founder
+    margin-top: 16px
+    height: 430px
+    padding: 136px 0 136px 0
+    background: url('../img/bg/bg_founder.png') center center/cover no-repeat
+    &_block
+        width: 417px
+        height: 158px
+        margin-left: auto
+        &_title
+            display: block
+            font-family: 'Roboto'
+            font-style: normal
+            font-size: 35px
+            line-height: 43px
+            letter-spacing: 0.5px
+            color: #1B1B1B
+        &_subtitle
+            display: block
+            margin-top: 33px
+            font-family: 'Montserrat'
+            font-style: normal
+            font-size: 16px
+            line-height: 25px
+            color: #666666
+        &_link
+            display: block
+            margin-top: 12.5px
+            font-family: 'Montserrat'
+            font-style: normal
+            font-weight: 400
+            font-size: 14px
+            line-height: 20px
+            letter-spacing: 2px
+            text-transform: uppercase
+            text-decoration: none
+            color: #1B1B1B
+
+
+
+
+
+
+
+
+                
