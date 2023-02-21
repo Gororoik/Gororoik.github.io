@@ -42,11 +42,19 @@ function validation(form) {
         
         removeError(input);
 
+        if (input.dataset.maxLength) {
+            if (input.value.length > input.dataset.maxLength) {
+                removeError(input);
+                createError(input, `max ${input.dataset.maxLength}`);
+                result = false
+            }
+        }
+
         if (input.dataset.minLength) {
             // removeError(input)
             if (input.value.length < input.dataset.minLength) {
-                removeError(input)
-                createError(input, 'min 3');
+                removeError(input);
+                createError(input, `min ${input.dataset.minLength}`);
                 result = false
             }
         }
@@ -57,6 +65,19 @@ function validation(form) {
                 removeError(input);
                 createError(input);
                 result = false
+            } else if (input.value.includes(' ')) {
+                const letters = /^[A-Za-z]+$/;
+                createError(input);
+                result = false
+                for (let i = 0; i < input.value.length; i++) {
+                    console.log(input.value[i]);
+                    if (input.value[i].match(letters)) {
+                        removeError(input);
+                        result = true
+                    } else {
+                        result = false
+                    }
+                }
             }
         }
     };
