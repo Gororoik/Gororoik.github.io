@@ -1,20 +1,73 @@
 @media ( min-width: 1112px )
+    .header
+        padding: 0 120px
+    .header__ul
+        gap: 48px
     .main__title
         font-size: 64px
         width: 400px
+    .main
+        height: 673px
+        padding: 54px 120px 250px 120px
     .main__descr
         font-size: 24px
         width: 486px
+    .projects__title
+        font-size: 48px
+    .projects-card
+        flex-direction: row
+    .projects-card__text-block
+        padding: 146px 38px 146px 50px
+        border-radius: 25px 0px 0px 25px
+    .projects-card__img-block
+        img
+            border-radius: 0px 25px 25px 0px
+    .projects-card__btn
+        margin-top: 24px
+        padding: 8px 24px
+        width: 150px
+        height: 43px
     .header__link
         font-size: 18px
     .header__title
         font-size: 32px
+    .gor__img
+        top: 15px
+        right: 30px
+        width: 660px
+        height: 576px
+    .gorzoom
+       transform: scale(1.070)
+    .icon__link
+        path
+            width: 60px
+            height: 60px
+        svg
+            width: 60px
+            height: 60px
+    .icons__wrapper
+        margin-top: 145px
+    .footer
+        padding-bottom: 80px
+    .another__text-block
+        border-radius: 0px 25px 25px 0px
+    .another__img-block
+        img
+            border-radius: 25px 0px 0px 25px
+            user-select: none
     
 @media ( max-width: 1111px )
+    .header
+        padding: 0 120px
+    .header__ul
+        gap: 48px
     .header__link
         font-size: 18px
     .header__title
         font-size: 32px
+    .main
+        height: 673px
+        padding: 54px 120px 250px 120px
     .main__smallTitle
         font-size: 20px
     .main__title
@@ -23,12 +76,48 @@
     .main__descr
         font-size: 20px
         width: 480px
+    .projects-card
+        flex-direction: row
+    .projects__title
+        font-size: 48px
+    .projects-card__text-block
+        padding: 146px 38px 146px 50px
+        border-radius: 25px 0px 0px 25px
+    .projects-card__img-block
+        img
+            border-radius: 0px 25px 25px 0px
+    .projects-card__btn
+        margin-top: 24px
+        padding: 8px 24px
+        width: 150px
+        height: 43px
     .yellow-bg
         svg
             width: 550px
             height: 500px
     .gor__img
-        width: 550px
+        width: 500px
+        top: 15px
+        right: 30px
+    .gorzoom
+        transform: scale(1.070)
+    .icon__link
+        path
+            width: 60px
+            height: 60px
+        svg
+            width: 60px
+            height: 60px
+    .icons__wrapper
+        margin-top: 145px
+    .footer
+        padding-bottom: 80px
+    .another__text-block
+        border-radius: 0px 25px 25px 0px
+    .another__img-block
+        img
+            border-radius: 25px 0px 0px 25px
+            user-select: none
 
 @media ( max-width: 992px )
     .main__title
@@ -42,7 +131,11 @@
             width: 500px
             height: 500px
     .gor__img
-        width: 520px
+        width: 490px
+        top: 10px
+        right: 25px
+    .gorzoom
+        transform: scale(1.070)
 
 @media ( max-width: 888px )
     .main__title
@@ -56,27 +149,41 @@
             width: 470px
             height: 500px
     .gor__img
-        width: 490px
+        width: 470px
+        top: 10px
+        right: 25px
 
-@media ( max-width: 810px )
+@media ( max-width: 835px )
+    .header
+        padding: 0 80px
     .header__link
-        font-size: 15px
+        font-size: 18px
     .header__title
-        font-size: 23px
+        font-size: 26px
     .main__smallTitle
         font-size: 17px
+    .main
+        height: 533px
+        padding: 54px 80px 50px 80px
     .main__title
         font-size: 35px
         width: 300px
     .main__descr
         font-size: 15px
         width: 320px
+    .projects__title
+        font-size: 37px
     .yellow-bg
         svg
             width: 400px
             height: 460px
     .gor__img
-        width: 435px
+        width: 405px
+    .another__text-block
+        padding: 0 34px
+
+
+@media ( max-width: 720px )
     
 
 // Projects
@@ -125,10 +232,130 @@
         font-size: 23px
     .projects-card__text-block
         width: 256px
-        height: 300px
+        height: 290px
     .projects-card__img-block
         width: 256px
-        height: 300px
+        height: 290px
     .projects-card__descr
         width: 200px
         font-size: 16px
+
+
+// phone
+
+
+@media ( max-width: 600px )
+    .header
+        padding: 0 20px
+    .header__ul
+        gap: 15px
+    .header__link
+        font-size: 13px
+    .header__title
+        font-size: 20px
+    .main
+        padding: 54px 20px 110px 20px
+        height: 470px
+    .main__smallTitle
+        font-size: 15px
+    .main__title
+        font-size: 28px
+        width: 220px
+    .main__descr
+        font-size: 17px
+        width: 260px
+    .yellow-bg
+        svg
+            width: 230px
+            height: 200px
+    .gor__img
+        display: none
+        opacity: 0
+    .gorzoom
+        transform: scale(1)
+    .projects__title
+        font-size: 35px
+    .projects-card
+        flex-direction: column
+        align-items: center
+    .projects-card__title
+        display: flex
+        justify-content: center
+        font-size: 25px
+    .projects-card__text-block
+        width: 325px
+        height: 340px
+        padding: 0
+        border-radius: 25px 25px 0 0
+    .projects-card__btn
+        display: block
+        margin: 0 auto
+        margin-top: 30px
+        padding: 4px 8px
+        width: 100px
+        height: 36px
+        font-size: 13px
+    .projects-card__img-block
+        width: 325px
+        height: 340px
+        img
+            border-radius: 0 0 25px 25px
+    .projects-card__descr
+        margin: 0 auto
+        width: 220px
+        font-size: 14px
+        text-align: center
+    .icon__link
+        path
+            width: 40px
+            height: 40px
+        svg
+            width: 40px
+            height: 40px
+    .icons__wrapper
+        margin-top: 85px
+    .footer
+        padding-bottom: 40px
+    .another__text-block
+        border-radius: 0 0 25px 25px
+    .another__img-block
+        img
+            border-radius: 25px 25px 0 0
+
+@media ( min-width: 450px ) and ( max-width: 510px )
+    .yellow-bg
+        svg
+            width: 292px
+            height: 270px
+        .gor__img
+            display: block
+            opacity: 1
+            width: 265px
+            height: 230px
+        .gorzoom
+            transform: scale(1.070)
+@media ( max-width: 370px )
+    .yellow-bg
+        svg
+            width: 170px
+            height: 150px
+    .projects-card__text-block
+        width: 275px
+        height: 290px
+        border-radius: 25px 25px 0 0
+    .projects-card__img-block
+        width: 275px
+        height: 290px
+        img
+            border-radius: 0 0 25px 25px
+    .another__text-block
+        border-radius: 0 0 25px 25px
+    .another__img-block
+        img
+            border-radius: 25px 25px 0 0
+    .gor__img
+        display: none
+        opacity: 0
+    .gorzoom
+        transform: scale(1)
+
