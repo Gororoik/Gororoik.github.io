@@ -1,0 +1,88 @@
+.projects
+    min-height: 1890px
+    &__title
+        font-family: 'Playfair Display'
+        font-style: normal
+        font-weight: 700
+        font-size: 48px
+        line-height: 72px
+        text-align: center
+        color: #25282B
+        user-select: none
+    &__divider
+        display: block
+        margin: 0 auto
+        margin-top: 4px
+        width: 100px
+        height: 4px
+        background: #FDC435
+        border-radius: 2px
+        user-select: none
+    &-card
+        margin-top: 80px
+        padding: 0
+        display: flex
+        justify-content: center
+        filter: drop-shadow(0px 6px 64px rgba(112, 144, 176, 0.1))
+        transition: filter .2s, transform .4s
+        &:hover
+            filter: drop-shadow(0px 10px 64px rgba(112, 144, 176, 0.1))
+            transform: scale(1.020)
+        &__title
+            font-family: 'Playfair Display'
+            font-style: normal
+            font-weight: 700
+            // font-size: 40px
+            line-height: 150%
+            color: #25282B
+            user-select: none
+        &__descr
+            margin-top: 24px
+            // width: 406px
+            font-family: 'Nunito'
+            font-style: normal
+            font-weight: 400
+            // font-size: 18px
+            line-height: 150%
+            color: #828282
+            user-select: none
+        &__btn
+            margin-top: 24px
+            padding: 8px 24px
+            width: 150px
+            height: 43px
+            border: 1px solid #25282B
+            border-radius: 24px
+            background: transparent
+            transition: background-color .3s, color .3s
+            user-select: none
+            &:hover
+                background-color: #202020
+                color: #fff
+            &:active
+                filter: brightness(70%)
+        &__text-block
+            display: flex
+            flex-direction: column
+            justify-content: center
+            // width: 496px
+            // height: 526px
+            padding: 146px 38px 146px 50px
+            border-radius: 25px 0px 0px 25px
+            background-color: #FFFFFF
+        &__img-block
+            // width: 496px
+            // height: 526px
+            img
+                width: 100%
+                height: 100%
+                border-radius: 0px 25px 25px 0px
+                user-select: none
+            
+
+.another__text-block
+    border-radius: 0px 25px 25px 0px
+.another__img-block
+    img
+        border-radius: 25px 0px 0px 25px
+        user-select: none

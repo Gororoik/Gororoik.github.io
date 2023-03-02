@@ -1,0 +1,101 @@
+.header
+    display: grid
+    align-items: center
+    padding: 0 120px
+    height: 56px
+    // background-color: #F1f1f1
+    user-select: none
+    &__nav
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__ul
+        display: flex
+        gap: 48px
+        // grid-column: 3
+        list-style-type: none
+        padding: 0
+        margin: 0
+        z-index: 15
+    &__link
+        font-family: 'Raleway', sans-serif
+        color: #25282B
+        text-transform: none
+        font-weight: 500
+        // font-size: 18px
+        line-height: 28px
+        text-decoration: none
+        &:hover
+            color: #25282B
+            text-transform: none
+            text-decoration: none
+    &__title
+        font-family: 'Nunito'
+        // font-size: 32px
+        user-select: none
+        cursor: pointer
+        a
+            color: #25282B
+            text-decoration: none
+            &:hover
+                color: #25282B
+                text-decoration: none
+
+.title-link
+    color: #25282B
+    text-decoration: none
+    &:hover
+        color: #25282B
+        text-decoration: none
+
+.underline
+    position: relative
+    transition: 1s all
+    display: inline-block
+    &::after
+        content: ''
+        position: absolute
+        width: 100%
+        transform: scaleX(0)
+        height: 2px
+        bottom: 0
+        left: 0
+        background-color: #000000
+        transform-origin: bottom right
+        transition: transform 0.25s ease-out
+    &:hover
+        &::after
+            transform: scaleX(1)
+            transform-origin: bottom left
+    &:focus
+        &::after
+            transform: scaleX(1)
+    &__title
+        position: relative
+        transition: 1s all
+        display: inline-block
+        &::after
+            background-color: #FDC435
+            content: ''
+            position: absolute
+            width: 100%
+            transform: scaleX(0)
+            height: 2px
+            bottom: 0
+            left: 0
+            transform-origin: bottom right
+            transition: transform 0.25s ease-out
+        &:hover
+            &::after
+                transform: scaleX(1)
+                transform-origin: bottom left
+    // &::after
+    //     content: ' '
+    //     position: absolute
+    //     display: inline-block
+    //     right: 0
+    //     top: 20px
+    //     width: 53px
+    //     height: 3px
+    //     background-color: #000
+        
