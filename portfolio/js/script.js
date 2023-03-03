@@ -6,6 +6,20 @@ function gorZoom () {
 
 gorZoom();
 
+function scroll () {
+   if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+      document.querySelector('.scroll').classList.add('scroll-show');
+   } else {
+      document.querySelector('.scroll').classList.remove('scroll-show');
+   }
+}
+
+// scroll();
+
+document.addEventListener('scroll', (event) => {
+   scroll();
+})
+
 // function yellZoom () {
 //     document.querySelector('.yellow-bg svg').classList.toggle('gorzoom');
 // };
