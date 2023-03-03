@@ -20,6 +20,35 @@ document.addEventListener('scroll', (event) => {
    scroll();
 })
 
+document.querySelector('.lan').addEventListener('click', (event) => {
+   event.langClicked = true;
+   if (document.querySelector('.langs').classList.contains('langs-show')) {
+      document.querySelector('.langs').classList.remove('langs-show');
+      document.querySelector('.langs').classList.add('langs-unshow');
+   } else if (document.querySelector('.langs').classList.contains('langs-unshow')) {
+      document.querySelector('.langs').classList.remove('langs-unshow');
+      document.querySelector('.langs').classList.add('langs-show');
+   } else if (!document.querySelector('.langs').classList.contains('langs-unshow') && !document.querySelector('.langs').classList.contains('langs-show')) {
+      document.querySelector('.langs').classList.add('langs-show');
+   }
+
+   // if (document.querySelector('.langs').classList.contains('langs-show') && document.querySelector('.langs').classList.contains('langs-unshow')) {
+   //    document.querySelector('.langs').classList.remove('langs-show');
+   // };
+   // if (document.querySelector('.langs').classList.contains('langs-unshow')) {
+   //    document.querySelector('.langs').classList.add('langs-show')
+   // }
+   // document.querySelector('.langs').classList.toggle('langs-show');
+   console.log('smthing');
+
+});
+
+document.body.addEventListener('click', (event) => {
+   if (event.langClicked || event.target.classList.contains('lang') || event.target.classList.contains('a')) return;
+   document.querySelector('.langs').classList.remove('langs-show');
+   document.querySelector('.langs').classList.add('langs-unshow');
+})
+
 // function yellZoom () {
 //     document.querySelector('.yellow-bg svg').classList.toggle('gorzoom');
 // };
