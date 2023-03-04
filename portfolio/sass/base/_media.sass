@@ -73,6 +73,12 @@
         width: 55px
         a
             font-size: 16px
+    .menu
+        visibility: hidden
+        opacity: 0
+    .menu-btn
+        visibility: hidden
+        opacity: 0
     
 @media ( max-width: 1111px )
     .header
@@ -152,7 +158,12 @@
         width: 55px
         a
             font-size: 16px
-
+    .menu
+        visibility: hidden
+        opacity: 0
+    .menu-btn
+        visibility: hidden
+        opacity: 0
 @media ( max-width: 992px )
     .main__title
         font-size: 46px
@@ -374,20 +385,29 @@
         a
             font-size: 13px
 
-@media ( min-width: 450px ) and ( max-width: 510px )
+@media ( max-width: 510px )
     .header__ul
         gap: 12px
     .yellow-bg
         svg
             width: 292px
             height: 270px
-        .gor__img
-            display: block
-            opacity: 1
-            width: 265px
-            height: 230px
+        // .gor__img
+        //     display: block
+        //     opacity: 1
+        //     width: 265px
+        //     height: 230px
         .gorzoom
             transform: scale(1.070)
+    .ul-unshow
+        visibility: hidden
+        opacity: 0
+    .menu
+        visibility: visible
+        opacity: 1
+    .menu-btn
+        visibility: visible
+        opacity: 1
 @media ( max-width: 370px )
     .yellow-bg
         svg
@@ -412,4 +432,12 @@
         opacity: 0
     .gorzoom
         transform: scale(1)
-
+    .ul-unshow
+        visibility: hidden
+        opacity: 0
+    .menu
+        visibility: visible
+        opacity: 1
+    .menu-btn
+        visibility: visible
+        opacity: 1
