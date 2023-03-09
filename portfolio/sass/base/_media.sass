@@ -11,7 +11,7 @@
         padding: 54px 120px 250px 120px
     .main__descr
         font-size: 24px
-        width: 486px
+        width: 450px
     .projects__title
         font-size: 48px
     .projects-card
@@ -38,6 +38,17 @@
         height: 576px
     .gorzoom
        transform: scale(1.070)
+    .gorabout
+        margin: 0
+        width: 327px
+        height: 519px
+        right: 185px
+        top: 90px
+    .yellow-round
+        width: 524px
+        height: 524px
+        top: 100px
+        right: 80px
     .icon__link
         path
             width: 60px
@@ -79,6 +90,9 @@
     .menu-btn
         visibility: hidden
         opacity: 0
+    .btn-yellow
+        margin-top: 32px
+        margin-right: 12px
     
 @media ( max-width: 1111px )
     .header
@@ -99,7 +113,7 @@
         width: 400px
     .main__descr
         font-size: 20px
-        width: 480px
+        width: 420px
     .projects-card
         flex-direction: row
     .projects__title
@@ -125,6 +139,17 @@
         right: 30px
     .gorzoom
         transform: scale(1.070)
+    .gorabout
+        margin: 0
+        width: 269px
+        height: 427px
+        right: 175px
+        top: 120px
+    .yellow-round
+        width: 432px
+        height: 432px
+        top: 133px
+        right: 90px
     .icon__link
         path
             width: 60px
@@ -164,13 +189,16 @@
     .menu-btn
         visibility: hidden
         opacity: 0
+    .btn-yellow
+        margin-top: 32px
+        margin-right: 12px
 @media ( max-width: 992px )
     .main__title
         font-size: 46px
         width: 400px
     .main__descr
         font-size: 18px
-        width: 430px
+        width: 340px
     .yellow-bg
         svg
             width: 500px
@@ -181,6 +209,16 @@
         right: 25px
     .gorzoom
         transform: scale(1.070)
+    .gorabout
+        width: 269px
+        height: 427px
+        right: 155px
+        top: 120px
+    .yellow-round
+        width: 432px
+        height: 432px
+        top: 130px
+        right: 70px
 
 @media ( max-width: 888px )
     .main__title
@@ -188,7 +226,7 @@
         width: 300px
     .main__descr
         font-size: 17px
-        width: 370px
+        width: 300px
     .yellow-bg
         svg
             width: 470px
@@ -197,6 +235,16 @@
         width: 470px
         top: 10px
         right: 25px
+    .gorabout
+        width: 245px
+        height: 389px
+        right: 163px
+        top: 150px
+    .yellow-round
+        width: 392px
+        height: 392px
+        top: 160px
+        right: 85px
     .scroll
         bottom: 20px
         right: 10px
@@ -225,7 +273,7 @@
         width: 300px
     .main__descr
         font-size: 15px
-        width: 320px
+        width: 260px
     .projects__title
         font-size: 37px
     .yellow-bg
@@ -234,14 +282,27 @@
             height: 460px
     .gor__img
         width: 405px
+    .gorabout
+        width: 222px
+        height: 353px
+        right: 130px
+        top: 156px
+    .yellow-round
+        width: 356px
+        height: 356px
+        top: 165px
+        right: 59px
     .another__text-block
         padding: 0 34px
     .langs
         right: 72px
-
-
-@media ( max-width: 720px )
-    
+    .icon__link
+        path
+            width: 47px
+            height: 47px
+        svg
+            width: 47px
+            height: 47px
 
 // Projects
 
@@ -301,7 +362,7 @@
 // phone
 
 
-@media ( max-width: 600px )
+@media ( max-width: 700px )
     .header
         padding: 0 20px
     .header__ul
@@ -318,9 +379,33 @@
     .main__title
         font-size: 28px
         width: 220px
-    .main__descr
-        font-size: 17px
+    // .main__descr
+    //     text-align: center
+    //     margin: 0 auto
+    //     font-size: 17px
+    //     width: 260px
+    .about-descr
+        font-size: 20px
+        text-align: center
+        margin: 0 auto
+    .about-title
+        text-align: center
+        margin: 0 auto
+        font-size: 32px
         width: 260px
+    .main-about
+        margin-top: 320px
+    .btn-yellow
+        justify-content: center
+        margin-right: 0
+    .button__link
+        display: flex
+        // justify-content: center
+        margin: 0 auto
+    // .main__wrapper
+    //     display: flex
+    //     flex-direction: column
+    //     align-items: center
     .yellow-bg
         svg
             width: 230px
@@ -330,6 +415,23 @@
         opacity: 0
     .gorzoom
         transform: scale(1)
+    .gorabout
+        left: 0
+        right: 0
+        margin: 0 auto
+        width: 245px
+        height: 389px
+        // left: 100px
+        // right: 163px
+        top: 83px
+        display: block
+        opacity: 1
+    .yellow-round
+        left: 50%
+        transform: translateX(-50%)
+        width: 406px
+        height: 406px
+        top: 80px
     .projects__title
         font-size: 35px
     .projects-card
@@ -370,7 +472,7 @@
             width: 40px
             height: 40px
     .icons__wrapper
-        margin-top: 85px
+        margin-top: 100px
     .footer
         padding-bottom: 40px
     .another__text-block
@@ -385,7 +487,7 @@
         a
             font-size: 13px
 
-@media ( max-width: 510px )
+@media ( max-width: 700px )
     .header__ul
         gap: 12px
     .yellow-bg
@@ -412,6 +514,27 @@
     //     right: 149px
     //     .lang
     //         width: 65px
+
+@media ( max-width: 450px )
+    .gorabout
+        left: 0
+        right: 0
+        margin: 0 auto
+        width: 175px
+        height: 277px
+        // left: 100px
+        // right: 163px
+        top: 95px
+        display: block
+        opacity: 1
+    .yellow-round
+        left: 50%
+        transform: translateX(-50%)
+        width: 305px
+        height: 305px
+        top: 80px
+    .main-about
+        margin-top: 240px
 @media ( max-width: 370px )
     .yellow-bg
         svg
@@ -436,6 +559,9 @@
         opacity: 0
     .gorzoom
         transform: scale(1)
+    .gorabout
+        display: block
+        opacity: 1
     .ul-unshow
         visibility: hidden
         opacity: 0

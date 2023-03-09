@@ -18,25 +18,61 @@
     <div class="images">
         <div class="yellow-bg yellow-bg-about">
             <img src="../img/yellow-round.png" alt="round" class='yellow-round'>
-            <!-- <div class="gor">
-                <img class='gor__img gorzoom gor__img-about' src="../img/menak2.png" alt="gor">
-            </div> -->
+            <div class="gor">
+                <img class='gor__img gorzoom gorabout' src="../img/menak3.png" alt="gor">
+            </div>
         </div>
     </div>
 
-    <header class="header">
+    <div class="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="menu-close"><span>&times;</span></div>
+
+    <div class="menu">
+        <nav>
+            <ul>
+                <li class='menu__item'><a href="../index.html" class='a underline__title'>Main</a></li>
+                <li class='menu__item'><a href="#" class='a underline__title'>About</a></li>
+                <li class='menu__item'><a href="../index.html#projects" class='a underline__title'>Projects</a></li>
+                <li class='menu__items_langs'>
+                    <a href="#" class='underline__title1 menu__link a'>Lang</a>
+                    <ul class='menu__langs'>
+                        <li class='menu__lang'><a class='menu__lang_link' href="#">Eng</a></li>
+                        <li class='menu__lang'><a class='menu__lang_link' href="aboutru.html">Rus</a></li>
+                        <li class='menu__lang'><a class='menu__lang_link' href="aboutarm.html">Arm</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <header class="header" id='start'>
         <div class="header_container">
             <nav class="header__nav">
                 <ul class="header__ul">
                     <li class="header__item_logo">
                         <!-- <img class='header__logo' src="icons/logo.svg" alt="logo"> -->
-                        <a href="../index.html" class='title-link'><div class="header__title underline__title">Gororoik</div></a>
+                        <a href="../index.html" class='title-link'>
+                            <div class="header__title underline__title1">Gororoik</div>
+                        </a>
                     </li>
                 </ul>
-                <ul class="header__ul">
+                <ul class="header__ul ul-unshow">
                     <li class="header__item"><a class='header__link underline' href="#">About</a></li>
-                    <li class="header__item"><a class='header__link underline' href="../index.html">Projects</a></li>
-                    <li class="header__item"><a class='header__link underline' href="#">Contacts</a></li>
+                    <li class="header__item"><a class='header__link underline' href="../index.html#projects">Projects</a></li>
+                    <li class="header__item">
+                        <a class='header__link underline lan' href="#">Lang</a>
+                        <ul class='langs'>
+                            <li class='lang'><a class='a' href="#">Eng</a></li>
+                            <li class='lang'><a class='a' href="aboutru.html">Rus</a></li>
+                            <li class='lang'><a class='a' href="aboutarm.html">Arm</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -44,9 +80,9 @@
 
     <section class="main main-about">
         <div class="main__wrapper">
-            <div class="main__title">About me</div>
-            <div class="main__descr">Nisl arcu, scelerisque neque ut. Tincidunt amet, tempor duis tortor neque auctor dis ipsum. Pretium cras amet odio amet eleifend id sed cras sed. Aliquet risus posuere aliquet imperdiet sit.</div>
-            <a href="#projects"><button class="button btn-yellow">Projects</button></a>
+            <div class="main__title about-title">About me</div>
+            <div class="main__descr about-descr">Nisl arcu, scelerisque neque ut. Tincidunt amet, tempor duis tortor neque auctor dis ipsum. Pretium cras amet odio amet eleifend id sed cras sed. Aliquet risus posuere aliquet imperdiet sit.</div>
+            <a href="#projects" class='button__link'><button class="button btn-yellow">Projects</button></a>
             <!-- <button class="button btn-white">LinkedIn</button> -->
         </div>
     </section>
